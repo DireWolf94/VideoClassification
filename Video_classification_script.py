@@ -53,6 +53,8 @@ def move_converted_videos(frames,inpath,filetype):
         for subdir, dirs, files in os.walk(inpath+classes):
             #print (subdir)
             #print(files)
+            if(subdir.endswith("jpeg")):    #to avoid redundancy we dont want another frame folder inside the jpeg folder
+                break
             count=0
             for file in files:
                 infilepath = subdir + os.sep + file
