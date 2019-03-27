@@ -72,7 +72,8 @@ class VideoClass(object):
                     move_jpg_to_frames(infilepath, outfilepath,count)
                 #print (infilepath,count)
 
-	def move_jpg_to_frames(self,infilepath, output_loc,count):
+    def move_jpg_to_frames(self,infilepath, output_loc,count):
+	
     	try:
         	os.mkdir(output_loc)
     	except OSError:
@@ -161,7 +162,7 @@ class VideoClass(object):
     	X_train, X_test, y_train, y_test = train_test_split(X,y)
     	return X_train, X_test, y_train, y_test
 
-	def run_lstm_model(self):
+    def run_lstm_model(self):
     	X_train, X_test, y_train, y_test=load_data_to_memory()
     
     	self.model = Sequential()
