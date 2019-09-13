@@ -190,7 +190,7 @@ class VideoClass(object):
     def test_model(self):
 
 #to run the scripts
-VideoClass object=new VideoClass("C:\\Users\\mirza914\\Downloads\\MLStuff_3-2\\summer3_2\\video_classification\\ucf_sports_actions\\ucf action\\",40,100,16)
+VideoClass object=new VideoClass("file_path",40,100,16)#filename,frames
 #move_converted_videos(40,"C:\\Users\\mirza914\\Downloads\\MLStuff_3-2\\summer3_2\\video_classification\\ucf_sports_actions\\ucf action\\","jpg")
 #extract_features("C:\\Users\\mirza914\\Downloads\\MLStuff_3-2\\summer3_2\\video_classification\\ucf_sports_actions\\ucf action\\",40)
 #run_lstm_model(100,16)
